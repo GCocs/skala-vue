@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +6,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: () => import('../views/HomeView.vue'),
     },
     {
       path: '/practice',
@@ -60,6 +59,11 @@ const router = createRouter({
       component: () => import('../views/practice/PropsEmitsPracticeView.vue'),
     },
     {
+      path: '/practice/component-slot',
+      name: 'practice-component-slot',
+      component: () => import('../views/practice/ComponentSlotPracticeView.vue'),
+    },
+    {
       path: '/hands-on',
       alias: '/handsup',
       name: 'hands-on',
@@ -78,12 +82,44 @@ const router = createRouter({
       component: () => import('../views/hands_on/HandsOn3View.vue'),
     },
     {
+      path: '/hands-on/4',
+      alias: '/handsup/4',
+      name: 'hands-on-4',
+      component: () => import('../views/hands_on/HandsOn4View.vue'),
+    },
+    {
+      path: '/hands-on/5',
+      alias: '/handsup/5',
+      name: 'hands-on-5-weather-home',
+      component: () => import('../views/hands_on5/WeatherHomeView.vue'),
+    },
+    {
+      path: '/hands-on/5/weather/:cityId',
+      name: 'hands-on-5-weather-detail',
+      component: () => import('../views/hands_on5/WeatherDetailView.vue'),
+    },
+    {
+      path: '/hands-on/5/about',
+      name: 'hands-on-5-weather-about',
+      component: () => import('../views/hands_on5/WeatherAboutView.vue'),
+    },
+    {
+      path: '/hands-on/5/guide',
+      name: 'hands-on-5-weather-guide',
+      component: () => import('../views/hands_on5/WeatherGuideView.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../views/hands_on5/NotFoundView.vue'),
     },
   ],
 })

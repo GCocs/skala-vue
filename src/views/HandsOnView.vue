@@ -13,6 +13,16 @@
         <strong>실습 3</strong>
         <span>Weather Composition</span>
       </RouterLink>
+
+      <RouterLink to="/hands-on/4">
+        <strong>실습 4</strong>
+        <span>Weather Components</span>
+      </RouterLink>
+
+      <RouterLink to="/hands-on/5">
+        <strong>실습 5</strong>
+        <span>Weather Router</span>
+      </RouterLink>
     </div>
   </section>
 </template>

@@ -48,6 +48,11 @@
         <strong>9. Props & Emits</strong>
         <span>부모와 자식 컴포넌트 간 데이터 전달</span>
       </RouterLink>
+
+      <RouterLink to="/practice/component-slot">
+        <strong>10. Component Slot</strong>
+        <span>기본, 이름이 있는 슬롯과 범위 슬롯</span>
+      </RouterLink>
     </div>
   </section>
 </template>
