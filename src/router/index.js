@@ -64,6 +64,21 @@ const router = createRouter({
       component: () => import('../views/practice/ComponentSlotPracticeView.vue'),
     },
     {
+      path: '/practice/pinia-basic',
+      name: 'practice-pinia-basic',
+      component: () => import('../views/practice/PiniaBasicPracticeView.vue'),
+    },
+    {
+      path: '/practice/axios',
+      name: 'practice-axios',
+      component: () => import('../views/practice/AxiosPracticeView.vue'),
+    },
+    {
+      path: '/practice/element-plus',
+      name: 'practice-element-plus',
+      component: () => import('../views/practice/ElementPlusPracticeView.vue'),
+    },
+    {
       path: '/hands-on',
       alias: '/handsup',
       name: 'hands-on',
@@ -107,6 +122,69 @@ const router = createRouter({
       path: '/hands-on/5/guide',
       name: 'hands-on-5-weather-guide',
       component: () => import('../views/hands_on5/WeatherGuideView.vue'),
+    },
+    {
+      path: '/hands-on/6',
+      alias: '/handsup/6',
+      name: 'hands-on-6-weather-home',
+      component: () => import('../views/hands_on6/WeatherHomeView.vue'),
+    },
+    {
+      path: '/hands-on/6/weather/:cityId',
+      name: 'hands-on-6-weather-detail',
+      component: () => import('../views/hands_on6/WeatherDetailView.vue'),
+    },
+    {
+      path: '/hands-on/6/about',
+      name: 'hands-on-6-weather-about',
+      component: () => import('../views/hands_on6/WeatherAboutView.vue'),
+    },
+    {
+      path: '/hands-on/6/guide',
+      name: 'hands-on-6-weather-guide',
+      component: () => import('../views/hands_on6/WeatherGuideView.vue'),
+    },
+    {
+      path: '/hands-on/7',
+      alias: '/handsup/7',
+      name: 'hands-on-7-weather-home',
+      component: () => import('../views/hands_on7/WeatherHomeView.vue'),
+    },
+    {
+      path: '/hands-on/7/weather/:cityId',
+      name: 'hands-on-7-weather-detail',
+      component: () => import('../views/hands_on7/WeatherDetailView.vue'),
+    },
+    {
+      path: '/hands-on/7/about',
+      name: 'hands-on-7-weather-about',
+      component: () => import('../views/hands_on7/WeatherAboutView.vue'),
+    },
+    {
+      path: '/hands-on/7/guide',
+      name: 'hands-on-7-weather-guide',
+      component: () => import('../views/hands_on7/WeatherGuideView.vue'),
+    },
+    {
+      path: '/hands-on/8',
+      alias: '/handsup/8',
+      name: 'hands-on-8-weather-home',
+      component: () => import('../views/hands_on8/WeatherHomeView.vue'),
+    },
+    {
+      path: '/hands-on/8/weather/:cityId',
+      name: 'hands-on-8-weather-detail',
+      component: () => import('../views/hands_on8/WeatherDetailView.vue'),
+    },
+    {
+      path: '/hands-on/8/about',
+      name: 'hands-on-8-weather-about',
+      component: () => import('../views/hands_on8/WeatherAboutView.vue'),
+    },
+    {
+      path: '/hands-on/8/guide',
+      name: 'hands-on-8-weather-guide',
+      component: () => import('../views/hands_on8/WeatherGuideView.vue'),
     },
     {
       path: '/about',

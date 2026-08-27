@@ -53,6 +53,21 @@
         <strong>10. Component Slot</strong>
         <span>기본, 이름이 있는 슬롯과 범위 슬롯</span>
       </RouterLink>
+
+      <RouterLink to="/practice/pinia-basic">
+        <strong>11. Pinia Basic</strong>
+        <span>store의 state, getters와 actions</span>
+      </RouterLink>
+
+      <RouterLink to="/practice/axios">
+        <strong>12. Axios</strong>
+        <span>날씨 API 통신과 JSON CRUD</span>
+      </RouterLink>
+
+      <RouterLink to="/practice/element-plus">
+        <strong>13. Element Plus</strong>
+        <span>폼, 수량·별점, 메시지와 진행률</span>
+      </RouterLink>
     </div>
   </section>
 </template>

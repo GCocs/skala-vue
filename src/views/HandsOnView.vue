@@ -23,6 +23,21 @@
         <strong>실습 5</strong>
         <span>Weather Router</span>
       </RouterLink>
+
+      <RouterLink to="/hands-on/6">
+        <strong>실습 6</strong>
+        <span>Weather Store</span>
+      </RouterLink>
+
+      <RouterLink to="/hands-on/7">
+        <strong>실습 7</strong>
+        <span>Weather Axios</span>
+      </RouterLink>
+
+      <RouterLink to="/hands-on/8">
+        <strong>실습 8</strong>
+        <span>Weather Element Plus</span>
+      </RouterLink>
     </div>
   </section>
 </template>
